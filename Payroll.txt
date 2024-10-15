@@ -11,17 +11,22 @@ public class main1{
     double PagIbig;
     double Tax;
     double TotalDeduction;
-    
+
+    System.out.println("---------------------------------");
     System.out.print("Enter Grosspay: ");
     grosspay = input.nextDouble();
     System.out.print("SSS: ");
     SSS = input.nextDouble();
+    System.out.println("---------------------------------");
     System.out.print("Tax: ");
     Tax = input.nextDouble();
+    System.out.println("---------------------------------");
     System.out.print("Pag-Ibig: ");
     PagIbig = input.nextDouble();
+    System.out.println("---------------------------------");
     TotalDeduction = SSS + Tax + PagIbig;
     double netpay = grosspay - TotalDeduction;
+    System.out.println("---------------------------------");
     System.out.print("Netpay "+netpay);
    
     }
