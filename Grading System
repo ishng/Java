@@ -1,0 +1,51 @@
+package mp5;
+
+import java.util.Scanner;
+
+public class guevarrra {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		
+	
+	double Q1;
+	double Q2;
+	double Q3;
+	double MP1;
+	double MP2;
+	double MP3;
+
+	
+	System.out.println ("Simple Grading System");
+	System.out.println ("Quizzes: (40%)");
+	System.out.print("Q1:");
+	Q1 = input.nextDouble();
+	System.out.print("Q2:");
+	Q2 = input.nextDouble();
+	System.out.print("Q3:");
+	Q3 = input.nextDouble();
+	double QT = (Q1+Q2+Q3)/3;
+	double QPercent = QT*.40;
+	System.out.println("QT:" +QT);
+	System.out.println("Q%:" +QPercent);
+	
+	System.out.println ("Machine Problems: (60%)");
+	System.out.print("MP1:");
+	MP1 = input.nextDouble();
+	System.out.print("MP2:");
+	MP2 = input.nextDouble();
+	System.out.print("MP3:");
+	MP3 = input.nextDouble();
+	double MPT = (MP1+MP2+MP3)/3;
+	double MPercent = MPT*.60;
+	double TG = QPercent + MPercent;
+	System.out.println("MPT:" +MPT);
+	System.out.println("MP%:" +MPercent);
+	System.out.println("Total Grade: "+TG);
+	
+
+	}
+
+}
