@@ -1,0 +1,36 @@
+package mp5;
+
+	import java.util.Scanner;
+
+	public class guevarrra {
+
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			
+			Scanner input = new Scanner(System.in);
+			
+		
+		double SP;
+		double AI;
+		double QA;
+		double TL;
+		
+		System.out.println("Stage Presence (25%)");		
+		System.out.print("SP: ");
+		SP = input.nextDouble();
+		System.out.println("Audience Impact (25%)");
+		System.out.print("AI:");
+		AI = input.nextDouble();
+		System.out.println("Question and Answer (25%)");
+		System.out.print("QA:");
+		QA = input.nextDouble();
+		System.out.println("Talent (25%)");
+		System.out.print("TL:");
+		TL = input.nextDouble();
+		double GA = SP +AI +QA +TL;	
+		System.out.println("Total Average: "+GA);
+		
+
+		}
+
+	}
